@@ -5,13 +5,16 @@ import { terser } from "rollup-plugin-terser"
 
 export default {
   context: 'window',
-  input: 'src/app.js',
+  input: 'app/javascript/application.js',
   output: {
-    file: 'public/js/app.js',
+    file: 'public/js/application.js',
     format: 'cjs'
   },
   plugins: [
-    babel({ babelHelpers: 'bundled' }),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**'
+    }),
     nodeResolve(),
     terser()
   ]
