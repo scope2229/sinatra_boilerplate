@@ -20,3 +20,5 @@ group :development do
   gem 'http'
   gem 'webrick'
 end
+
+gem "sinatra-partial", "~> 1.0"
