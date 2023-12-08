@@ -1,21 +1,22 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
-gem "rake"
+gem 'i18n'
+gem 'rake'
 gem 'require_all'
+gem 'sinatra'
 
 group :development do
   gem 'foreman'
   gem 'rubocop'
   # Auto app reload
   gem 'sinatra-contrib'
-  gem "pry"
+  gem 'pry'
 
-  gem "thin"
-  gem "puma"
-  gem "reel"
-  gem "http"
-  gem "webrick"
+  gem 'thin'
+  gem 'puma'
+  gem 'reel'
+  gem 'http'
+  gem 'webrick'
 end

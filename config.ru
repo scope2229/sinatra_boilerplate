@@ -1,8 +1,10 @@
-require "rubygems"
-require "bundler/setup"
+# frozen_string_literal: true
+
+require 'rubygems'
+require 'bundler/setup'
 require 'require_all'
 
-#Include the controllers
+# Include the controllers
 require_all 'app/controllers'
 
 # If you add a controller use 'use' keyword
