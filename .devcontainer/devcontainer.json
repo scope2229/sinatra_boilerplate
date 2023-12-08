@@ -1,0 +1,18 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ruby
+{
+	"name": "PixelOragamiLabs",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.Ruby"
+			]
+		}
+	},
+	"postCreateCommand": "git config --global --add safe.directory /workspace",
+	"remoteUser": "vscode"
+}

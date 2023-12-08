@@ -1,0 +1,21 @@
+{
+  "name": "PixelOragamiLabs",
+  "version": "1.0.0",
+  "description": "Pixel Oragami Labs main website",
+  "main": "index.js",
+  "author": "Scope2229",
+  "license": "PRIVATE",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.7.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "stimulus": "^3.2.2"
+  }
+}
